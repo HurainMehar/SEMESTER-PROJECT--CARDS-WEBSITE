@@ -1,0 +1,111 @@
+.navbar{
+    background-image: url(Assets/BGG2.png);
+   
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: none;
+    ruby-merge: bottom;
+}
+
+.banner{
+    height: 570px;
+    background-color:#000;
+   background-position: cover;
+   background-repeat: no-repeat; 
+   
+}
+.banner-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+.banner-content h1{
+   font-family: 'Protest Riot', sans-serif;
+   color: pink;
+   font-size:xxxx-large;
+}
+.banner-content h5{
+    font-family: "Playfair_Display variant0", Tofu;
+    color: pink;
+}
+.banner-content p{
+    color: bisque;
+    width: 600px;
+    text-align: center;
+}
+.banner-content h4{
+         color: bisque;
+         font-family: PT Serif;
+}
+.about-us{
+    background-image: url(Assets/BGG2.png);
+    background-position: cover;
+    background-repeat: no-repeat; 
+    height: 650px;
+  
+}
+
+.aboutus-content{
+   margin-top: 150px;
+   margin-left: 600px;
+   
+}
+.aboutus-content h1{
+    color: bisque;
+         font-family: PT Serif;
+         text-align: center;
+        
+}
+.aboutus-content h2{
+    font-family: 'Protest Riot', sans-serif;
+    color:black;
+    text-align: center;
+    size: 90px;
+}
+.aboutus-content h5{
+    font-family: "Playfair_Display variant0", Tofu;
+    color: pink;
+    text-align: center;
+}
+.aboutus-content p{
+    color: blanchedalmond;
+    
+}
+.hero-content{
+    margin-top: 100px;
+}
+.banner3{
+    background-color:black;
+}
+.Services{
+    background-color:black;
+}
+.Services h1{
+    color: blanchedalmond;
+    font-family: PT Serif; 
+}
+.card-body{
+    background-image: url(Assets/BGG2.png);
+    background-position: bottom;
+}
+.card-body h5{
+  font-family: PT Serif; 
+}
+.service-cards{
+    margin-bottom: 10px;
+}
+.hero-content h1{
+    font-family: PT Serif; 
+    color: blanchedalmond;
+}
+.hero-content p{
+    color: pink;
+}
+.py-5 h5{
+color: bisque;
+}
