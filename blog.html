@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+   
+</head>
+<style>
+    body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #666666;
+  -webkit-font-smoothing: antialiased;
+  padding: 80px;
+  overflow-x: hidden;
+}
+
+textarea {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+	color: #FF0;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+a,
+button {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  line-height: 2;
+  margin: 0;
+}
+
+.tm-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* http://w3bits.com/css-masonry/ */
+.masonry {
+  /* Masonry container */
+  -webkit-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 0;
+  column-gap: 0;
+}
+
+.item {
+  /* Masonry bricks or child elements */
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tm-relative {
+  position: relative;
+}
+
+.tm-block {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 600px;
+}
+
+.tm-block-wider {
+  max-width: 640px;
+  width: calc(100% + 40px);
+}
+
+.tm-block-left {
+  right: 20px;
+  bottom: 20px;
+}
+
+.tm-block-left-2 {
+  right: 60px;
+  top: 15px;
+}
+
+.tm-block-right {
+  padding: 15px 0 20px 20px;
+}
+
+.tm-img-left {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.tm-hero-text {
+  padding: 140px 95px 0;
+}
+
+.tm-block-pad {
+  padding: 67px 63px;
+}
+
+.tm-block-icon {
+  text-align: center;
+  display: block;
+  margin: 0 30px 30px;
+}
+
+.tm-block-brand {
+  position: relative;
+  margin-top: 147px;
+  margin-bottom: 27px;
+}
+
+.tm-block-brand-inner {
+  position: relative;
+  right: 50px;
+  padding: 70px 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tm-brand-name {
+  margin: 0 40px 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.tm-bg-dark {
+  background-color: #333333;
+}
+
+.tm-bg-white {
+  background-color: #ffffff;
+}
+
+.tm-btn {
+  padding: 15px 25px;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.tm-btn-small {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 15px 35px;
+}
+
+.tm-btn-pad-big {
+  padding: 17px 45px;
+}
+
+.tm-btn-primary {
+  color: #9999cc;
+  background-color: #ffffff;
+}
+
+.tm-btn-primary:hover {
+  background-color: #c5c5e6;
+}
+
+.tm-btn-secondary {
+  color: white;
+  background-color: #9999cc;
+}
+
+.tm-btn-secondary:hover {
+  color: #ffffff;
+  background-color: #5b5bb2;
+}
+
+.tm-text-white {
+  color: #ffffff;
+}
+
+.tm-text-gray-light {
+  color: #999999;
+}
+
+.tm-bg-primary-light {
+  background-color: #cc9999;
+}
+
+.tm-bg-primary-dark {
+  background-color: #996666;
+}
+
+.tm-bg-secondary {
+  background-color: #9999cc;
+}
+
+.tm-mt {
+  margin-top: 30px;
+}
+
+.tm-mt-big {
+  margin-top: 50px;
+}
+
+.tm-mb {
+  margin-bottom: 45px;
+}
+
+.tm-mb-small {
+  margin-bottom: 20px;
+}
+
+.tm-text-right {
+  text-align: right;
+}
+
+.tm-text-uppercase {
+  text-transform: uppercase;
+}
+
+.tm-form-group {
+  margin-bottom: 25px;
+}
+
+input,
+textarea {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #958ec0;
+  padding: 18px 20px;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tm-pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.tm-img-qr {
+  width: 150px;
+  height: 150px;
+  margin: 30px 20px 30px 0;
+}
+
+.tm-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 600px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.tm-footer,
+.tm-footer a {
+  color: #cbcbcb;
+}
+
+.tm-footer a:hover {
+  color: #996666;
+}
+
+.tm-footer p {
+  font-size: 16px;
+}
+
+@media (max-width: 1232px) {
+  body {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .masonry {
+    /* Masonry container */
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .tm-container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 540px) {
+  .tm-block-brand-inner {
+    flex-direction: column;
+    padding: 35px;
+    right: 30px;
+  }
+
+  .tm-brand-name {
+    margin-top: 20px;
+  }
+
+  .tm-contact-form {
+    width: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 50px;
+  }
+
+  .tm-block-pad {
+    padding: 45px;
+  }
+
+  .tm-hero-text {
+    padding: 50px 45px 0;
+  }
+
+  .tm-block-brand {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 417px) {
+  .tm-block-left,
+  .tm-block-left-2 {
+    right: 0;
+  }
+
+  .tm-block-wider {
+    width: 100%;
+  }
+
+  .tm-footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    padding: 40px 20px 10px;
+  }
+
+  .tm-form-section-tag-inner {
+    left: 25px;
+    right: -25px;
+    bottom: -25px;
+  }
+}
+
+</style>
+<body class="tm-bg-dark">
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <p class="tm-hero-text">At Etheral&Embrace, we understand that your wedding day is one of the most significant moments in your life. It's a day filled with love, joy, and cherished memories. And what better way to set the tone for your special day than with beautifully crafted wedding cards that reflect your unique style and love story?</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">Etheral&Embrace</h1>
+                </div>
+            </header>
+        </div>
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlZGRpbmcnfGVufDB8fDB8fHww" alt="Image" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2" data-desktop-seq-no="3"
+            data-mobile-seq-no="5">
+            <i class="fas fa-award fa-4x tm-block-icon"></i>
+            <p>Birthdays are special occasions that deserve to be celebrated in style. Whether it's a milestone birthday or simply another year of laughter and love, there's no better way to convey your heartfelt wishes than with a beautifully crafted birthday card from etheral&embrace.</p>
+            <div class="tm-text-right">
+                <a href="#" class="tm-btn tm-btn-small tm-btn-primary tm-mt">Read More</a>
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="https://images.pexels.com/photos/14961288/pexels-photo-14961288/free-photo-of-elegant-wedding-invitation-postcard-in-a-gray-envelope.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image" class="tm-img-left">
+        </div>
+       
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="https://images.pexels.com/photos/6765928/pexels-photo-6765928.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                       JUST ETHERAL&EMBRACE
+                    </h2>
+                </header>
+                <p>You can freely use this  site. , we believe that every special moment deserves to be commemorated with a thoughtful card. Whether it's a birthday, wedding, anniversary, or just a simple thank you, we have a wide selection of cards to suit every occasion and personality.
+                </p>
+                <!-- -->
+            </div>
+        </div>
+
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="https://images.pexels.com/photos/12944992/pexels-photo-12944992.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+        </div>
+
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad tm-pb-0">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
+                       
+                    </h2>
+                </header>
+                <h1>How It Works                </h1>
+                <p>Explore our online catalog to discover thousands of beautiful designs for every occasion.
+
+                    Once you've found the perfect card, personalize it with your own message, fonts, colors, and images using our easy-to-use customization tool.
+                    
+                   Preview your customized card to ensure it looks exactly how you want it, then place your order securely through our website.
+                    
+                    Let us handle the rest! Your personalized card will be printed, carefully packaged, and delivered to your recipient's doorstep, ready to bring a smile to their face.</p>
+            </div>
+
+            <div class="tm-form-section-tag">
+                <div class="tm-bg-secondary tm-text-white tm-block-pad tm-form-section-tag-inner">
+                    <header>
+                        <h2>YOUR MOMENT OUR'S CREATION</h2>
+                    </header>
+                    <p>Whether you're celebrating a birthday, wedding, anniversary, or just saying "thank you," let Celebrate Cards help you make every moment unforgettable. Browse our collection today and find the perfect card to spread joy and love to your friends and family.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
